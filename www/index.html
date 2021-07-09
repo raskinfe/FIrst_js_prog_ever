@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="css/tabs.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="js/tabs.js"></script>
+        <script type="text/javascript" src="js/dropdown.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        
+
+
+    </head>
+    <body>
+
+          <!-- Top navigation menu -->
+        <section class="top-nav">
+            <div class="dropdown">
+                <input style="font-family: FontAwesome" type="submit" name="" onclick="myFunction()" class="dropbtn" value="&#xF0C9;">
+                  <div id="myDropdown" class="dropdown-content">
+
+
+                    <section class="#">              
+                      <button class="close"><i class="fa fa-times"></i></button> 
+                    </section>
+
+                    <section class="drpdown-content">
+                        <img src="img/co-working.jpg" id="logo-img">
+                    </section>
+                    
+                    <section class="drpdown-content">
+                        <a href="#"><i class="fa fa-home" style="margin-right: 10px;"></i>Dashboard</a>
+                        <a href="html/bookings1.html"><i class="fa fa-book" aria-hidden="true" style="margin-right: 10px;"></i>My bookings</a>
+                        <a href="html/settings.html"><i class="fa fa-cogs" aria-hidden="true" style=" margin-right: 10px;"></i>Settings</a>
+                        <a href="html/user.html"><i class="fa fa-user" style=" margin-right:10px; " aria-hidden="true"></i>User</a>
+                        
+                    </section>
+
+                    <section class="drpdown-content">
+                        <a href="html/qr.html"><i class="fa fa-qrcode" style="margin-right: 10px;"></i>Scan QR code</a>
+                        <a href="html/navigate.html" id="navigate" onclick="#"><i class="fa fa-street-view" style="margin-right: 10px;"></i>Navigate your booked desk</a>
+                        <a href="html/invite.html"><i class="fa fa-user-plus" style="margin-right: 10px;"></i>Invite</a>
+                        <a href="html/contact.html" onclick="#"><i class="fa fa-envelope-open" style="margin-right: 10px;"></i>Contact us</a>
+                        <a href="#" onclick="logout()"><i class="fa fa-sign-out" aria-hidden="true" style="margin-right: 10px;"></i>Logout</a>
+                    </section>
+                  </div>
+            </div>
+
+            <input style="font-family: FontAwesome; margin-left: 10px;" type="search" name="" placeholder="&#xF002; Search" id="search">
+
+    </section>
+
+
+
+        <!--The main tabs -->
+
+        <!--div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Dashboard')"><i class="fa fa-home" style="font-size: 30px;"></i><br>Dashboard</button>
+        <button class="tablinks" onclick="openTab(event, 'Bookings')"><i class="fa fa-book" aria-hidden="true" style="font-size: 30px;"></i><br>Bookings</button>
+        <button class="tablinks" onclick="openTab(event, 'Settings')"><i class="fa fa-cogs" aria-hidden="true" style="font-size: 30px;"></i><br>Settings</button>
+        <button class="tablinks" onclick="openTab(event, 'User')"><i class="fa fa-user" style="font-size: 30px; margin-bottom: none; margin-top: 5px; " aria-hidden="true"></i><br>User</button>
+        </div-->
+     
+
+  
+
+
+    <!-- Tab content -->
+    <section class="contents">
+        
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Room')" id="defaultOpen">Rooms</button>
+            <button class="tablinks" onclick="openTab(event, 'Desk')">Desk</button>
+
+            <input  class="tablinks" type="date" id="start" name="start"
+                value="2021-05-25"
+                min="2021-05-25" max="2040-12-31" >
+
+
+        </div>
+
+
+        <!--tab content -->
+        <div class="tab-content">
+        <div id="Room" class="tabcontent">
+          <div class="row">
+            <div class="column">
+              <h2 id='rooms'>Empty</h3>
+              <p id="date"></p>
+              <p id="time"></p>
+              <p id="name"></p>
+            </div>
+
+            <div class="column">
+
+              <h2 id='rooms1'></h3>
+              <p id="date1"></p>
+              <p id="time1"></p>
+              <p id="name1"></p>
+              
+            </div>
+
+            
+          
+          </div>
+          
+        </div>
+
+        
+
+        <div id="Desk" class="tabcontent">
+          <div class="row">
+            <div class="column">
+
+              <h2 id="desk"></h2>
+              <p id="dateD"></p>
+              <p id="timeD"></p>
+              <p id="roomsD"></p>
+              
+            </div>
+            
+          </div>
+        </div>
+
+
+        </div>
+        <button class="create" onclick="redirect()"><i class="fa fa-plus"></i>  Create new booking</button>
+
+    </section>
+
+    <section class="contents">
+
+         <div class="tab">
+          <button class="tablinks1" onclick="openTab1(event, 'event')" id="defaultOpen1">Events</button>
+            <button class="tablinks1" onclick="openTab1(event, 'Member')" >Members</button>
+            <button class="tablinks1" onclick="openTab1(event, 'company')">Companies</button>
+            
+
+
+
+        </div>
+
+
+        <!--tab content -->
+        <div class="tab-content">
+        <div id="Member" class="tabcontent1">
+          <div class="row" id="member">
+
+            
+          </div>
+
+
+        </div>
+
+        <div id="company" class="tabcontent1">
+          <div class="event-row">
+
+            <div id="compn">
+              
+            </div>
+            
+          </div>
+        </div>
+
+        <div id="event" class="tabcontent1">
+          <div class="event-row">
+
+            <div class="col" id="col">
+              
+            </div>
+            
+          </div>
+          <button class="create" onclick="newEvent()"><i class="fa fa-plus"></i>  Create new Event</button>
+        </div>
+
+
+        </div>
+
+        <!--button onclick="testNotifications()">Test Notification</button-->
+        
+    </section>    
+
+   
+    <script type="text/javascript">
+        
+        
+    function logout() {
+
+        //window.localStorage.clear();
+        window.location.reload(true);
+        window.location.replace("login.html");
+    }
+
+
+// Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen1").click();
+
+         function redirect() {
+
+            //
+            window.location.href = 'html/new.html'
+           //window.location.reload(true);
+         }
+
+         function newEvent() {
+
+          window.location.href = 'html/event.html';
+
+         }
+
+         document.getElementById('start').valueAsDate = new Date();
+
+
+         function openChat() {
+
+          document.getElementById('chatForm').style.display = "block";
+         
+         }
+
+         function cancelChat() {
+
+          document.getElementById('chatForm').style.display = "none";
+         
+         }
+
+
+  
+  let data = JSON.parse(localStorage.getItem('data'));
+  let today = document.getElementById('start').value;
+  
+  console.log(today);
+
+ 
+  // creating a member tab content 
+
+
+  const membrDiv = document.createElement('div');
+  membrDiv.setAttribute('id', 'membr');
+  const usr1 = document.createElement('h3');
+  const job_title = document.createElement('p');
+  const company = document.createElement('h5');
+  console.log(data.length);
+
+  if(data.length !== null) {
+
+    let l = data.length;
+
+    for(var i= 0; i<l; i+=8){
+
+      if(i>7 && data[i] !== data[(i-8)]){
+
+         usr1.innerHTML = data[i] + " " + data[(i+1)];
+         job_title.innerHTML = data[(i+7)];
+         company.innerHTML = data[(i+5)];
+
+         membrDiv.appendChild(usr1);
+         membrDiv.appendChild(job_title);
+         membrDiv.appendChild(company);
+
+         let parentDiv = document.getElementById('member').parentNode;
+         let currentDiv = document.getElementById('member');
+
+         parentDiv.insertBefore(membrDiv, currentDiv);
+
+
+      } else {
+
+         usr1.innerHTML = data[i] + " " + data[(i+1)];
+         job_title.innerHTML = data[(i+7)];
+         company.innerHTML = data[(i+5)];
+
+         membrDiv.appendChild(usr1);
+         membrDiv.appendChild(job_title);
+         membrDiv.appendChild(company);
+
+         let parentDiv = document.getElementById('member').parentNode;
+         let currentDiv = document.getElementById('member');
+
+         parentDiv.insertBefore(membrDiv, currentDiv);
+
+      }
+
+    }
+  }
+
+  let element = JSON.parse(localStorage.getItem('element'));
+
+
+  const compDiv = document.createElement('div');
+  const compName = document.createElement('h3');
+  compDiv.setAttribute('id', 'comp');
+
+  if(data.length !== null){
+
+    var j = data.length;
+
+    for(var i = 0; i<j; i+=8){
+
+      if(i>7 && data[(i+5)] !== data[((i+5)-8)]) {
+
+        compName.innerHTML = data[(i+5)];
+
+        compDiv.appendChild(compName);
+
+        let parentDiv = document.getElementById('compn').parentNode;
+
+        let currentDiv = document.getElementById('compn');
+
+        parentDiv.insertBefore(compDiv, currentDiv);
+
+      } else {
+
+        compName.innerHTML = data[(i+5)];
+
+        compDiv.appendChild(compName);
+
+        let parentDiv = document.getElementById('compn').parentNode;
+
+        let currentDiv = document.getElementById('compn');
+
+        parentDiv.insertBefore(compDiv, currentDiv);
+      }
+    }
+  }
+
+
+
+
+    if(element.length !== 0){
+      console.log(element.length);
+      var j = element.length;
+
+      for(var i=0; i < j; i+=7) {
+      console.log(element[i]);
+
+        if(element[i] == today){
+
+        var rooms = element[(i+2)];
+        var date = element[(i)];
+        var time = element[(i+1)];
+        var desk = element[(i+3)];
+        var name = data.slice(0,1);
+
+
+        document.getElementById('rooms').innerHTML = rooms;
+        document.getElementById('date').innerHTML = date;
+        document.getElementById('time').innerHTML = time; 
+        document.getElementById('name').innerHTML = name;
+        document.getElementById('roomsD').innerHTML = rooms;
+        document.getElementById('dateD').innerHTML = date;
+        document.getElementById('timeD').innerHTML = time; 
+        document.getElementById('desk').innerHTML = desk;
+
+        
+      }else if(element[i+7]==today) {
+
+        var rooms1 = element[(i+9)];
+        var date1 = element[(i+7)];
+        var time1 = element[(i+8)]
+        var name1 = data.slice(0,1);
+
+         document.getElementById('rooms1').innerHTML = rooms1;
+        document.getElementById('date1').innerHTML = date1;
+        document.getElementById('time1').innerHTML = time1; 
+        document.getElementById('name1').innerHTML = name1;
+
+
+      }
+      
+
+
+
+    }
+
+  
+
+  }
+
+
+ 
+
+  let event = JSON.parse(localStorage.getItem('event'));
+  let k = event.length;
+  console.log(k);
+
+  for(var i =0; i<k; i+=9){
+
+    const newDiv = document.createElement('div');
+    
+    newDiv.setAttribute('id', 'event-1')
+
+    const p1 = document.createElement('h3');
+    const p2 = document.createElement('h4');
+    const p3 = document.createElement('p');
+    const p4 = document.createElement('p');
+    const p5 = document.createElement('h5');
+    const p6 = document.createElement('p');
+    const p7 = document.createElement('p');
+    
+    p1.innerHTML =  event[i];
+    p2.innerHTML =  "Event title: " +event[(i+1)]
+    p3.innerHTML = "Date: " + event[(i+2)] + " -- " + event[(i+4)]
+    p4.innerHTML = "Time: " + event[(i+3)] + " -- " + event[(i+5)]
+    p5.innerHTML =  "Room: " +event[(i+6)]
+    p6.innerHTML =  "Location: " +event[(i+7)]
+    p7.innerHTML =  "This event is a  " +event[(i+8)] + " event."
+
+    //console.log(p2);
+
+    newDiv.appendChild(p1);
+    newDiv.appendChild(p2);
+    newDiv.appendChild(p3);
+    newDiv.appendChild(p4);
+    newDiv.appendChild(p5);
+    newDiv.appendChild(p6);
+    newDiv.appendChild(p7);
+
+    let parentDiv = document.getElementById('col').parentNode;
+    
+
+    const currentDiv = document.getElementById('col');
+    parentDiv.insertBefore(newDiv, currentDiv);
+    
+
+  }
+
+
+         setTimeout(function(){ cordova.plugins.notification.local.schedule({ title: 'Hello World', trigger: { in: 5, unit: 'second' } }); },5000) ;
+
+    </script>
+
+  
+
+    </body>
+</html>

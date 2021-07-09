@@ -1,0 +1,138 @@
+
+body  {
+
+  background: #d4dddd;
+  margin-bottom:130px;
+}
+
+.contents {
+  width: 98%;
+    background: white;
+    height: max-content;
+    border-radius: 25px;
+    /* margin-top: 30px; */
+    /* padding-top: 10px; */
+    padding-top: 20px;
+    margin: 1%;
+    margin-top: 15px;
+    padding-bottom: 10px;
+
+}
+
+
+#profile-img {
+ border-radius: 70%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.profile {
+   
+    background: #ededed;
+    width: 85%;
+    height: max-content;
+    padding-top: 20px;
+    padding-left: 30px;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+
+    margin-bottom: 20px;
+}
+
+#change-img {
+ padding: 15px 25px;
+    border-radius: 25px;
+    margin-left: 10%;
+    background: #4848d6;
+    color: white;
+    height: 60px;
+    width: 70%;
+    font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+}
+
+#change-img:hover {
+  background: green;
+}
+
+.usr-info {
+  
+ background: #ededed;
+    width: 85%;
+    height: max-content;
+    padding-top: 20px;
+    padding-left: 30px;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    
+}
+
+.title {
+  font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+    font-weight: bold;
+}
+
+.name {
+  float: left;
+}
+
+.paragraph {
+  float: right;
+}
+
+
+.first {
+  float: left;
+    
+    margin-top: 0px;
+}
+
+
+.last {
+
+  float: right;
+    margin-right: 60%;
+    margin-top: 0px;
+}
+
+#email {
+  margin-top: 0px;
+    margin-right: 0px;
+    font-family: Arial Helvetica sans-serif;
+    font-size: 20px;
+}
+
+#etitle {
+  margin-top: -20px;
+}
+
+.usr-info p {
+  font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+}
+
+.decl {
+  font-size: 20px;
+    font-weight: 600;
+    font-family: arial;
+}
+
+#back {
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    /* width: 250px; */
+    background: white;
+    border: none;
+    padding: 5px;
+    margin-left: 20px;
+ }
+
+ 

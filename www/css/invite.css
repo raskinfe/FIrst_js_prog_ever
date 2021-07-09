@@ -1,0 +1,104 @@
+body  {
+
+   background: #d4dddd;
+   margin-bottom:130px;
+}
+
+.contents {
+   width: 98%;
+    background: white;
+    height: max-content;
+    border-radius: 25px;
+    
+    padding-top: 10px;
+   margin: 1%;
+   margin-top: 30px;
+    padding-bottom: 20px;
+
+}
+
+.image {
+
+   float: left;
+}
+
+.form {
+
+   margin-top: 20px;
+    background: #ededed;
+    width: 98%;
+    padding-bottom: 50px;
+    margin-left: 1%;
+    padding-top: 10px;
+    font-family: arial Helvetica sans-serif;
+    border-radius: 25px;
+}
+
+#mail {
+
+   width: 60%;
+    margin-left: 10px;
+    margin-top: 200px;
+    padding: 5px;
+}
+
+.header {
+   margin-left: 20px;
+    
+    padding-right: 100p;
+    font-size: 20px;
+}
+
+input {
+
+   font-family: FontAwesome;
+    width: 80%;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    outline: none;
+    height: 40px;
+    
+}
+
+#message {
+   height: 150px;
+   font-family: FontAwesome;
+    width: 80%;
+    padding: 10px 20px;
+    margin-left: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    outline: none;
+    color: #3a3636;
+}
+
+#message::placeholder {
+   padding: 5px;
+}
+
+#back {
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    /* width: 250px; */
+    background: white;
+    border: none;
+    margin-left: 20px;
+ }
+
+ input[type="submit"] {
+   width: 80%;
+    position: center;
+    padding: 20px 20px;
+    margin-left: 35px;
+    border-radius: 40px;
+    background: #4848d6;
+    color: white;
+    height: 60px;
+    font-size: 20px;
+    
+    font-weight: bold;
+    margin-top: 10px;
+ }

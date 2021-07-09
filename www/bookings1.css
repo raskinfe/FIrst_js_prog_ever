@@ -1,0 +1,16 @@
+body {
+	background: #d4dddd;
+}
+
+.contents {
+	width: 100%;
+    background: white;
+    /* height: 600px; */
+    border-radius: 25px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    height: max-content;
+	
+
+}

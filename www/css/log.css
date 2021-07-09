@@ -1,0 +1,347 @@
+/*body{
+	background: #d4dddd;
+}
+
+.logo {
+	
+	float: left;
+    width: 98%;
+    background: white;
+    margin-top: 30px;
+    border-radius: 25px;
+    margin: 1%;
+
+}
+
+.header {
+	font-size: 40px;
+	font-style: normal;
+	font-size-adjust: all;
+	margin-left:15px;
+	margin-right: 10px;
+}
+
+.welcome {
+	font-size-adjust: all;
+	font-size: 30px;
+	margin-left:	20px;
+	padding: 5px;
+	
+}
+
+.form{
+	
+	float: left;
+    width: 98%;
+    background: white;
+    margin-top: 20px;
+    height: 800px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    margin: 1%;
+
+}
+
+input[type="password"] {
+
+	    height: 100px;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 40px;
+    font-family: Arial, Helvetica;
+    background: inherit;
+    font-size: 30px;
+    outline: none;
+}
+
+input[type="text"] {
+
+	width: 100%;
+    padding: 20px 20px;
+    margin: 8px\; box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 40px;
+    /* font-family: Arial, Helvetica; */
+/*   background: inherit;
+    height: 100px;
+    font-size: 30px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#forget {
+
+	width: 300px;
+    margin-left: 65%;
+    border: none;
+    font-family: Arial, Helvetica;
+    font-style: normal;
+    background: none;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#logon {
+
+    width: 100%;
+    position: center;
+    padding: 10px 20px;
+    /* margin-left: 10%; */
+ /*   border-radius: 25px;
+    background: #2323cb;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+    font-weight: normal;
+
+}
+
+#logon:hover{
+	background: green;
+}
+
+#signup {
+
+	width: 200px;
+    margin-left: 10%;
+    border: none;
+    font-family: Arial, Helvetica;
+    font-style: normal;
+    background: none;
+    margin-top: 40px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#new {
+
+    width: 40%;
+    position: relative;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background: none;
+    color: #3937de;
+    height: 45px;
+    font-size: 17px;
+    font-family: Arial Helvetica sans-serif;
+    font-weight: normal;
+    border: none;
+}
+
+#new:hover {
+	background: green;
+}
+
+#coworking {
+	width: 80%;
+}
+
+.description {
+	font-family: Arial, Helvetica sans-serif;
+    font-size: 30px;
+}
+.login-form{
+	margin-right: 30px;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+.header2 {
+	font-family: Arial, Helvetica sans-serif;
+    font-size: 50px;
+
+}
+
+.signup {
+
+	margin-top: 15px;
+	
+}
+
+#new a {
+	color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+*/
+
+body{
+    background: #d4dddd;
+    margin-bottom: 230px;
+}
+
+.logo {
+    
+    float: left;
+    width: 95%;
+    background: white;
+    margin-top: 30px;
+    border-radius: 25px;
+    margin: 2%;
+    margin-bottom: 10px;
+
+}
+
+.header {
+    font-size: 30px;
+    font-style: normal;
+    font-size-adjust: all;
+    margin-left:15px;
+    margin-right: 10px;
+}
+
+.welcome {
+    font-size-adjust: all;
+    font-size: 30px;
+    margin-left:    20px;
+    padding: 5px;
+    
+}
+
+.form{
+    
+    float: left;
+    width: 95%;
+    background: white;
+    margin-top: 10%;
+    height: max-content;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    margin: 2%;
+    padding-bottom: 20px;
+
+
+}
+
+input[type="password"] {
+
+        height: 50px;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 40px;
+    font-family: Arial, Helvetica;
+    background: inherit;
+    font-size: 17px;
+    outline: none;
+}
+
+input[type="text"] {
+
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px; box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 40px;
+    /* font-family: Arial, Helvetica; */
+    background: inherit;
+    height:50px;
+    font-size: 17px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#forget {
+
+    font-family: Arial, Helvetica;
+    font-style: normal;
+    background: none;
+    font-size: 17px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+#logon {
+    width: 100%;
+    position: center;
+    padding: 10px 20px;
+    
+    border-radius: 25px;
+    background: #2323cb;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+    font-weight: normal;
+
+}
+
+#logon:hover{
+    background: green;
+}
+
+#signup {
+
+    
+        margin-left: 10%;
+    border: none;
+    font-family: Arial, Helvetica;
+    font-style: normal;
+    background: none;
+    margin-top: 10px;
+    font-size: 17px;
+   
+}
+
+#new {
+
+    
+    position: relative;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background: none;
+    color:#1b32d4;
+    height:45px;
+    font-size: 17px;
+    font-family: Arial Helvetica sans-serif;
+    font-weight: normal;
+    border: none;
+}
+
+#btn-link {
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial Helvetica sans-serif;
+    margin-left: -10px;
+}
+
+#new:hover {
+    color: green;
+}
+
+#coworking {
+    width: 80%;
+}
+
+.description {
+    font-family: Arial, Helvetica sans-serif;
+    font-size: 20px;
+}
+.login-form{
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.header2 {
+    font-family: Arial, Helvetica sans-serif;
+    font-size: 30px;
+
+}
+
+
+

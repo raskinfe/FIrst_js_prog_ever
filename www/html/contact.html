@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact us</title>
+  <link rel="stylesheet" type="text/css" href="../css/tabs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   <section class="popup">
+
+      <!--button class="open-button" onclick="openChat()">Contact us</button-->
+
+
+
+      <div id="chatForm">
+
+        <div class="back"><button style="font-family:FontAwesome;" value="" id="back" onclick="back()"><i class="fa fa-arrow-left"></i>  Back</button></div>
+
+       <div class="chatContent">
+          <h1 id="chatTitle">Chat with us</h1>
+
+        <textarea id="msg">Message</textarea>
+
+        <div class="buttons">
+          <button id="send" onclick="#"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send</button>
+          <button id="cancel" onclick="cancelChat()"><i class="fa fa-window-close"></i>  Cancel</button>
+        </div>
+       </div>
+      </div>
+      
+    </section>
+
+
+    <script type="text/javascript">
+      
+      function back() {
+        // body...
+        window.history.back();
+      }
+
+      function cancelChat() {
+        document.getElementById('msg').value = "";
+      }
+
+    </script>
+
+
+</body>
+</html>

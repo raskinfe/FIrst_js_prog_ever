@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create new</title>
+	<link rel="stylesheet" type="text/css" href="../css/new.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="../js/new.js"></script>
+</head>
+<body>
+
+	<section class="contents">
+
+		<div class="back"><button style="font-family:FontAwesome;" id="back" onclick="back()"><i class="fa fa-arrow-left"></i>  Back</button></div>
+
+			
+
+		<div class="form">
+
+			
+			<form onsubmit="return false">
+
+				<div class="header">
+					<h1>Book your co-working room</h1>
+				</div>
+
+				<div>
+					<input  class="tablinks" type="date" id="start" name="start"
+                value=""
+                min="5/24/2021" max="5/24/2040" >
+
+                <input type="time" id="appt" name="appt"
+      				min="00:00:00" max="18:00:00" required
+      				value="10:21:00">
+				</div>
+
+				<div>
+				<label for="rooms">Select a room to book: </label>
+				<select name="rooms" id="rooms" class="option">
+					<option value="cubicle">Cubicle</option>
+					<option value="bullpen">Bullpen</option>
+					<option value="private">Private room</option>
+					<option value="recording">Studio</option>
+					<option value="meeting">Meeting room</option>
+					<option value="presentation">Presentation room</option>
+				</select>
+				</div>
+
+				<div>
+					<label for="desk">Select a desk type: </label>
+					<select name="desk" id="desk" class="option">
+						<option value="standing">Standing table</option>
+						<option value="floating">Floating table</option>
+						<option value="corner">Corner desk</option>
+						<option value="roll-top">Roll-Top desk</option>
+						<option value="writing">Writing desk</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="monitor">Choose a monitor: </label>
+					<select name="monitor" class="option" id="monitor">
+						<option value="dual">Dual monitor</option>
+						<option value="general">General use</option>
+						<option value="professional">Professional</option>
+						<option value="gaming">Gaming monitor</option>
+						<option value="ultra">UltraWide</option>
+						<option value="curved">Curved</option>
+						<option value="touch">Touch screen</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="display">Select a display port: </label>
+					<select name="display" class="option" id="display">
+						<option value="hdmi">HDMI</option>
+						<option value="vga">VGA</option>
+						<option value="display">DisplayPort</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="additional"  id="additional">Aditional equipments: </label>
+					<select name="additional" class="option" id="additional">
+						<option value="1">1</option>
+					</select>
+				</div>
+
+				<div><input type="submit" name="" value="Create" onclick="create()"></div>
+				<!--div><p id="disp" style="font-size: 40px;">Hooray</p></div-->
+				
+
+			</form>
+			<!--button onclick="show()">Display</button-->
+
+			<span id="message" style="color: green; font-family: Arial; font-size: 30px"> </span>
+
+		</div>
+		
+	</section>
+
+	<script type="text/javascript">
+
+		document.getElementById('start').valueAsDate = new Date();
+
+		
+		var current = new Date();
+		currentTime = current.toLocaleTimeString();
+		console.log(currentTime.slice(0,5));
+		
+		if(currentTime.slice(0)<10) {
+
+			document.getElementById('appt').value = "0"+currentTime.slice(0,5);
+		} else {
+
+			document.getElementById('appt').value = currentTime.slice(0,5);
+		}
+
+		
+
+	</script>
+
+</body>
+</html>

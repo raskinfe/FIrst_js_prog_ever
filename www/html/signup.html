@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="../css/signup.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="../js/signup.js"></script>
+</head>
+<body>
+<section class="contents">
+	<div class="signup-form">
+		<div class="back"><button style="font-family:FontAwesome;" id="back" onclick="back()"><i class="fa fa-arrow-left"></i>  Back</button></div>
+		<form class="signup" onsubmit="return verifyPassword()" name="contact-form">
+			
+			<span id="successful" style="color:green;"></span>
+			<div class="text">
+				<label>First name:<br>
+				<input style="font-family: FontAwesome" type="text" name="" id="first_name" required placeholder="&#61447; First name">
+			</label>
+
+			</div>
+			
+			<div class="text">
+				<label>Last name:<br>
+				<input style="font-family: FontAwesome" type="text" name="" id="last_name" required placeholder="&#61447; Last name">
+			</label>
+			</div>
+			<div class="text">
+				<label>Username:<br>
+				<input style="font-family: FontAwesome" type="text" name="" id="username" required placeholder="&#61447; Username">
+			</label>
+			</div>
+
+			<div class="text">
+				<label>Email:<br>
+				<input style="font-family: FontAwesome" type="email" name="" id="email" required placeholder="&#xf0e0; Email">
+			</label>
+		</div>
+
+			<div class="text">
+				<label>New password:<br>
+				<input style="font-family: FontAwesome" type="password" name="" id="newPassword" required placeholder="&#xf084; New password">
+			</label>
+			<span id="message-length" style="color:red"></span><br>
+		</div>
+
+			<div class="text">
+				<label>Confirm Password:<br>
+				<input style="font-family: FontAwesome" type="password" name="" id="password_confirm" required placeholder="&#xf084; Password">
+			</label>
+			<span id="message" style="color:red"></span><br>
+		</div>
+
+			<div class="text">
+				<label>Company name:<br>
+				<input style="font-family: FontAwesome" type="text" name="" id="company_name" required placeholder="&#xf1ad; Company name">
+			</label>
+			</div>
+
+			<div class="text">
+				<label>Department:<br>
+				<input style="font-family: FontAwesome" type="text" name="" id="department" required placeholder="&#xf1ad; Department">
+			</label>
+
+			</div>
+
+			<div class="text">
+				<label>Position:<br>
+				<input style="font-family: FontAwesome" type="text" name="" id="position" required placeholder="&#xf2bb; Position">
+			</label>
+
+			</div>
+
+			<div class="text">
+				
+				<input  type="checkbox" name="" id="agree" required >
+				<span class="checkboxText">I agree to the <a href="#" class="terms">terms and services</a> of the site.</span>
+			</div>
+
+			<div class="submit">
+				<input type="submit" name="" value="Register" onclick="register()">
+				<input type="button" name="" value="Cancel" onclick="back()" id="cancel">
+			</div>
+			
+		</form>
+	</div>
+	
+</section>
+
+<!--button onclick="display()">display</button>
+<h1 id="output">something</h1-->
+
+
+</body>
+</html>

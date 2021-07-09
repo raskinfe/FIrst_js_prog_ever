@@ -1,0 +1,173 @@
+
+body {
+
+    background: #d4dddd;
+}
+
+
+.contents {
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 20px;
+    background: white;
+    height: max-content;
+    border-radius: 25px;
+    padding-top: 5PX;
+    padding-bottom: 20px;
+}
+
+.text {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: black solid 1px;
+    
+    font-size: 20px;
+    font-family: Arial Helvetica;
+    background-color: #f1f1f1;
+    margin-top: 5px;
+    outline: none;
+
+}
+
+label {
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.signup {
+
+    margin-top: 30px;
+}
+
+
+input[type="submit"] {
+
+    width: 40%;
+    position: center;
+    padding: 12px 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: Arial Helvetica;
+    background: #4848d6;
+    color: white;
+
+}
+
+#cancel {
+    width: 40%;
+    position: center;
+    padding: 12px 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: Arial Helvetica;
+    background: #4848d6;
+    color: white;
+}
+
+input[type="email"] {
+
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: black solid 1px;
+    
+    font-size: 20px;
+    font-family: Arial Helvetica;
+    background-color: #f1f1f1;
+    margin-top: 8px;
+    outline: none;
+
+}
+
+input[type="password"] {
+
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: black solid 1px;
+   
+    font-size: 20px;
+    font-family: Arial Helvetica;
+    background-color: #f1f1f1;
+    margin-top: 8px;
+    outline: none;
+
+}
+
+
+input[type="submit"]:hover{
+    background: green;
+}
+
+input[type="text"]::placeholder{
+
+    color: solid black;
+    
+
+}
+span {
+
+    font-family: Arial Helvetica;
+    font-size: 17px;
+}
+
+#agree {
+
+    transform: scale(2);
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.checkboxText {
+    font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+    margin-left: 10px;
+}
+
+.terms {
+
+    color: black;
+    font-family: Arial Helvetica sans-serif;
+
+}
+
+.terms:hover {
+    color: #ddd;
+}
+
+#cancel {
+    background: #d71212;
+}
+
+#cancel:hover {
+    background: #f74949;
+}
+
+#back {
+   font-size: 20px;
+    /* width: 250px; */
+    background: white;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+ }

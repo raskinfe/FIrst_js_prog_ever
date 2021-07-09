@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigate</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/navigate.css">
+	<script src="https://maps.google.com/maps/api/js"></script>
+	<script async defer 
+    src= "https://maps.googleapis.com/maps/api/js?key=MyAPIKey&callback=NewMap">
+</script>
+</head>
+<body>
+
+	<section class="contents">
+
+		<div class="header">
+			<div class="back"><button style="font-family:FontAwesome;" value="" id="back" onclick="back()"><i class="fa fa-arrow-left"></i>  Back</button></div>
+			
+		</div>
+
+		<div class="data-input">
+			<h1>Navigate to your booked room</h1>
+			<!--input style="font-family: FontAwesome" type="text" name="" id="current" placeholder="Current position"-->
+			<div id="geolocation"></div>
+			<!--input type="text" name="" id="#" list="destination"-->
+			<select id ="destination">
+
+				<option value="Room 1 cubicle farm">Room 1 cubicle farm</option>
+				<option value="Room 2 free space">Room 2 free space</option>
+				<option value="Room 3 presentation room">Room 3 presentation room</option>
+				<option value="Room 4 conference room">Room 4 conference room</option>
+				<option value="Room 5 executive office a">Room 5 executive office a</option>
+				
+			</datalist>
+			<input type="submit" name="" value="Navigate" id="navigate" onclick="navigate()">
+			<a href="geo:38.897096,-77.036545" id="addr"></a>
+
+		</div>
+
+		<!--div id="map" style="width: 200px; height: 200px;"></div-->
+		
+	</section>
+
+
+	<script type="text/javascript">
+		function back(){
+			window.history.back();
+		}
+
+
+		function navigate() {
+
+			document.getElementById('addr').href = "geo:52.521992, 13.413244";
+			document.getElementById('addr').click();
+
+		}
+
+
+
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(52.5200,13.4050),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+
+
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs_pNDtxNvDC2z2jxaqAzLWgV8fCS50ew&callback=myMap"></script>
+</body>
+</html>

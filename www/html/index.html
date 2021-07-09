@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+      
+<head>
+    <title>Scan QR Code</title>
+    
+
+ <link rel="stylesheet" type="text/css" href="../css/qr.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--script type="text/javascript" src="./js/index.js"></script-->
+ <!--script type="text/javascript" src="../js/cordova.js"></script-->
+ 
+</head>
+<body>
+   
+
+<div class="header">
+    <div class="back"><button style="font-family:FontAwesome;" value="" id="back" onclick="back()"><i class="fa fa-arrow-left"></i></button></div>
+    <div class="title"><h1>Scan QR Code Here</h1></div>
+</div> 
+<!--video id="preview"></video-->
+<div class="buttons">
+    <!--input type="submit" name="options" value=" Use Front Camera " class="submit_button" onclick="scan()"-->
+
+    <input id="scan" onclick="scan()" value="Scan" type="submit" class="submit_button">
+    <input id="cancel" onclick="cancel()" value="Cancel" type="submit" class="submit_button">
+  
+</div>
+
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+<script type="text/javascript">
+
+function back() {
+    window.history.back();
+}
+
+
+
+</script>
+
+
+</body>
+</html>

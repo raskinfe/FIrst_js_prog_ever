@@ -1,0 +1,118 @@
+body  {
+
+  background: #d4dddd;
+  margin-bottom:130px;
+}
+
+.contents {
+  width: 100%;
+    background: white;
+    /* height: 600px; */
+    border-radius: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+}
+
+#back {
+    font-size: 20px;
+    /* width: 250px; */
+    background: white;
+    border: none;
+    margin-left: 20px;
+ }
+ 
+
+ input[type="submit"] {
+  width: 90%;
+    position: center;
+    padding: 20px 20px;
+    margin-left: 20px;
+    border-radius: 40px;
+    background: #4848d6;
+    color: white;
+    height: 60px;
+    font-size: 20px;
+    
+    font-weight: bold;
+    margin-top: 40px;
+ }
+
+ h1 {
+  margin-left: 20px;
+    
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.form{
+  margin-top: 30px;
+    background: #ededed;
+    width: 98%;
+    padding-bottom: 30px;
+    margin-left: 1%;
+    padding-top: 30px;
+    font-family: arial Helvetica sans-serif;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+label {
+  margin-left: 20px;
+    margin-bottom: 20px;
+    /* width: 50%; */
+    padding: 5px;
+}
+
+#start {
+
+  width: 75%;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+    outline: none;
+    background: white;
+}
+
+#appt {
+
+   width: 75%;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Arial Helvetica sans-serif;
+    outline: none;
+    background: white;
+
+}
+
+.option {
+  margin-bottom: 20px;
+    width: 30%;
+    padding: 10px 20px;
+    font-size: 17px;
+    margin-left: 5px;
+    border-radius: 25px;
+    outline: none;
+    background: white;
+}
+
+#additional {
+  font-family: Arial Helvetica sans-serif;
+    font-size: 20px;
+    width: 30%;
+    padding: 5px;
+}

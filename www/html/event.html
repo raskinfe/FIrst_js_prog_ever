@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New event</title>
+	<link rel="stylesheet" type="text/css" href="../css/event.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="../js/event.js"></script>
+</head>
+<body>
+
+	<section class="contents">
+
+		<div class="back"><button style="font-family:FontAwesome;" id="back" onclick="back()"><i class="fa fa-arrow-left"></i>  Back</button></div>
+
+		<div class="event-form">
+			<span style="color:green; font-family: Arial; font-size:18px;" id="msg"></span> 
+
+			<form class="event" onsubmit="return false" id="frm">
+				
+				<label class="title" for="category" >Category: 
+
+					<select name="category" id="category">
+							
+						<option value="Seminars and Conference">Seminars and Conference</option>
+						<option value="Team-Building event">Team-Building event</option>
+						<option value="Board Meetings">Board Meetings</option>
+						<option value="Product launch">Product launch</option>
+						<option value="Shareholder meetings">Shareholder meetings</option>
+
+					</select>
+						
+
+					
+
+				<label class="title">Event title: </label>
+					<input type="text" name="" placeholder="Event title" id="event-title">
+
+				<label class="title">Start:<br>
+				<input  class="tablinks" type="date" id="start" name="start"
+                value="2021-05-25"
+                min="2021-05-25" max="2040-12-31" >
+                <input type="time" id="appt" name="appt"
+      				min="09:00" max="18:00" required
+      				value="10:21">
+				</label>
+				<label class="title">End:<br>
+				<input  class="tablinks" type="date" id="end" name="start"
+                value="2021-05-25"
+                min="2021-05-25" max="2040-12-31" >
+                <input type="time" id="endt" name="appt"
+      				min="09:00" max="18:00" required
+      				value="10:21"></label>
+
+      			<label class="title" for="location">Location:  				
+      				<select name="location" id="location">
+      					<option value="Room 1 Cubicle farm">Room 1 Cubicle farm</option>
+      					<option value="Room 2 Conference room">Room 2 Conference room</option>
+      					<option value="Room 3 Executive office">Room 3 Executive office</option>
+      				</select>
+      					
+      				
+      				<textarea id="address">Address</textarea>
+      				
+      			</label>
+
+      			<label for="privacy" class="title">Privacy:
+      				<select name="privacy" id="privacy">
+      					<option value="private">Private</option>
+      					<option value="public">Public</option>
+      				</select>
+      				
+      			</label>
+
+      			<button class="btn" onclick="Event_create()">Create</button>
+      			<button class="btn" id="cancel" onclick="cancel_event()">Cancel</button>
+      			
+
+
+			</form>
+			
+		</div>
+		
+	</section>
+
+
+	<script type="text/javascript">
+
+		function back() {
+			// body...
+
+			window.history.back();
+		}
+
+		function display() {
+			// body...
+
+			let event = JSON.parse(localStorage.getItem('event'));
+
+			//console.log(event);
+
+			document.getElementById('display').innerHTML = event;
+
+		}
+	</script>
+
+</body>
+</html>

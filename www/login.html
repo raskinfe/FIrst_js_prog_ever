@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
+    <script type="text/javascript" src="js/log.js"></script>
+    <title>Log in</title>
+</head>
+<body>
+
+    <section>
+        <section class="logo">
+            <div class="header">
+                <h1>Manage your co-working space booking</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <img src="img/co-working.jpg" id="coworking">
+            </div>
+            
+        </section>
+        
+        <section class="form">
+        <form class="login-form" onsubmit="return false">
+            <div>
+                <h1 class="header2">Log in to your account</h1>
+                <p class="description">Enter your details to login</p>
+            </div>
+            <input style="font-family: FontAwesome;" type="text" name="username" placeholder="&#61447; Username or Email" id="username" required><br>
+            <span id="umsg" style="color:red; font-size: 17px;"></span>
+            <br><input style="font-family: FontAwesome;" type="password" name="password" placeholder="&#xf084; Password" id="password" required><br>
+            <button id="forget">Forgot password?</button><br>
+            <span id="pmsg" style="color:red; font-size: 17px;"></span>
+            <br><input id="logon" onclick="authenticate()" type="submit" value="Login"><br>
+
+            
+        </form>
+        <div class="signup">
+                <br><label id="signup">Need an account? </label>
+                <button id="new"><a id="btn-link" href="../www/html/signup.html">Signup</a> </button>
+            </div>
+    </section>
+
+    <!--section class="left">
+        <div>
+            <img src="img/place2.jpg" id="img1">
+        </div>
+    </section-->
+    
+
+    
+    
+</section>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript">
+    function signup() {
+        var url = "html/signup.html";
+        window.open(url);
+    }
+</script>
+</body>
+</html>

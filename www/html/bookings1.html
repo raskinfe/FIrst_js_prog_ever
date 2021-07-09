@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bookings</title>
+	<link rel="stylesheet" type="text/css" href="../css/bookings1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+	<section class="contents">
+
+		<div class="back"><button style="font-family:FontAwesome;" value="" id="back" onclick="back()"><i class="fa fa-arrow-left"></i>  Back</button></div>
+
+		<div class="table">
+
+			<table style="width:100%; margin-bottom: 10px;">
+
+			<tr class="title" style="margin-bottom: 10px; font-size: 20px">
+				
+				<!--th>Name</th-->
+				<th>Date</th>
+				<th>Time</th>
+				<th>Rooms</th>
+				<th>Desk</th>
+				<th>Monitor</th>
+				<th>Display port</th>
+				<th>Additional</th>
+				
+			</tr>
+
+			<tbody id="tbody"></tbody>
+
+
+
+			
+		</table>
+		<button onclick="deleteLast()" id="cancel">Delete last entry</button>
+
+		</div>
+
+		
+		<span id="show"></span>
+		
+	</section>
+
+	<script type="text/javascript">
+		
+		let element = JSON.parse(localStorage.getItem('element'));
+		let data = JSON.parse(localStorage.getItem('data'));
+
+		var tbody = document.getElementById('tbody');
+
+		for(var i = 0; i<element.length; i+=7) {
+
+			var tr = "<tr>";
+			 tr += "<th>" + element[(i)]+" " +"</th>"+"<th>" + element[(i+1)] +"</th>"+"<th>" + element[(i+2)] +"</th>"+"<th>" + element[(i+3)] +"</th>" +"<th>" + element[(i+4)] +"</th>"+"<th>" + element[(i+5)]+"<th>"+element[(i+6)] +"</th></tr>";
+			  tbody.innerHTML += tr;
+		}
+
+		
+
+		
+
+
+		function display() {
+
+			document.getElementById('show').innerHTML = element;
+		}
+
+		function back() {
+
+			window.history.back();
+		}
+
+		function deleteLast() {
+
+
+			if(confirm("Are you sure you want to delete the last entry?")) {
+
+				var delElement = JSON.parse(localStorage.getItem('element'));
+
+			for(var i = (delElement.length-6); i <delElement.length; i++) {
+
+				delElement.pop();
+				console.log(delElement[i]);
+
+				
+			}
+			
+			window.localStorage.setItem('element', JSON.stringify(delElement));
+
+			window.location.reload();
+			}
+			
+		}
+
+
+
+	</script>
+
+</body>
+</html>

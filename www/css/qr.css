@@ -1,0 +1,105 @@
+
+body {
+  background: #d4dddd;
+  background: transparent;
+}
+
+.header {
+  background: white;
+    width: 90%;
+    height: max-content;
+    border-radius: 25px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+}
+
+h1 {
+  
+    font-size: 20px;
+    font-family: Arial, Helvetica;
+    margin-left: 90px;
+  
+}
+
+#preview {
+   width: 90%;
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 25px;
+}
+
+
+
+.submit_button {
+  width: 42%;;
+    position: center;
+    height: 50px;
+    margin-left: 20px;
+    background: lightgray;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    background: #4848d6;
+    color: white;
+    font-size: 20px;
+    font-family: Arial Helvetica;
+    outline: none;
+}
+
+.submit_button:hover {
+
+  background: green;
+ }
+
+ #back {
+    float: left;
+    
+    /* margin-left: 20px; */
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 5px 10px;
+    background: white;
+    border: none;
+    font-weight: bold;
+    margin-left: 10px;
+    outline: none;
+ }
+
+ #backCamera {
+    background: #5e5ebd;;
+ }
+
+ #backCamera:hover {
+    background: green;
+ }
+
+ #cancel {
+    width: 42%;
+    position: center;
+    padding: 12px 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: Arial Helvetica;
+    background: #d73a33;
+    color: white;
+}
+
+#cancel:hover {
+
+  background: #ff342b;
+}
+
+#scan:hover {
+
+  background: green;
+}

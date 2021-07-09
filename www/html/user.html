@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="../css/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="contents">
+
+        <div>
+            <div class="back"><button style="font-family:FontAwesome;" value="" id="back" onclick="back()"><i class="fa fa-arrow-left"></i> Back</button></div>
+        </div>
+
+        
+            <div class="profile">
+                <img src="../img/user.png" id="profile-img"><br><br><br>
+                <button id="change-img">Change picture</button>
+            </div>
+
+        </section>
+
+           <section class="contents">
+                <div class="usr-info">
+                <div><p class="decl">Full Name</p>
+                    <p id="first_name"></p>
+                </div>
+               <div>
+                    <p class="decl" id="Email">Email</p>
+                    <p id="email"></p>
+                </div>
+                <div>
+                   <p class="decl">Company</p>
+                   <p id="company"></p>
+                </div>
+                <div>
+                    <p class="decl">Department</p>
+                    <p id="department"></p>
+                </div>
+                <div>
+                    <p class="decl">Job title</p>
+                    <p id="position"></p>
+                </div>
+        
+        </div>
+           </section>
+    
+
+    <script type="text/javascript">
+
+        let data = JSON.parse(localStorage.getItem('data'));
+        first_name = data.slice(0,1);
+        last_name = data.slice(1,2);
+        email = data.slice(3,4);
+        company = data.slice(5,6);
+        department = data.slice(6,7);
+        position = data.slice(7,8);
+
+        document.getElementById('first_name').innerHTML = first_name + " " + last_name ;
+        
+        document.getElementById('email').innerHTML = email;
+        document.getElementById('company').innerHTML = company;
+        document.getElementById('department').innerHTML = department;
+        document.getElementById('position').innerHTML = position;
+
+        function back() {
+
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
